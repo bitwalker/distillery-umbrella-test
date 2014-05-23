@@ -21,4 +21,4 @@
 # [dep1: [key: :value],
 #  dep2: [key: :value]]
 
-[]
+[app_two: [port: 8091]]
