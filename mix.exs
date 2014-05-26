@@ -3,6 +3,8 @@ defmodule UmbrellaTest.Mixfile do
 
   def project do
     [apps_path: "apps",
+     app: :umbrella_test,
+     version: "0.1.0",
      deps: deps]
   end
 
