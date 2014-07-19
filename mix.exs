@@ -18,7 +18,7 @@ defmodule UmbrellaTest.Mixfile do
   #
   # Type `mix help deps` for more examples and options
   defp deps do
-    [{:exrm, path: "../exrm"},
+    [{:exrm, "~> 0.12.6"},
      {:cowboy, github: "extend/cowboy"}]
   end
 end

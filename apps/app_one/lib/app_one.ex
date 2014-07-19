@@ -4,6 +4,8 @@ defmodule AppOne do
   # See http://elixir-lang.org/docs/stable/Application.html
   # for more information on OTP Applications
   def start(_type, _args) do
+    import Supervisor.Spec, warn: false
+
     dispatch = :cowboy_router.compile([
         # {URIHost, list({URIPath, Handler, Opts})}
         {:_, [{"/", AppOne.Handler, []}]}
@@ -14,6 +16,12 @@ defmodule AppOne do
         [port: port],
         [env: [dispatch: dispatch]]
     )
-    AppOne.Supervisor.start_link
+
+    children = []
+    opts = [
+      strategy: :one_for_one,
+      name: AppOne.Supervisor
+    ]
+    Supervisor.start_link(children, opts)
   end
 end
