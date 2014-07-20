@@ -21,4 +21,4 @@
 # [dep1: [key: :value],
 #  dep2: [key: :value]]
 
-[]
+[master_app: [debug?: true]]
