@@ -11,7 +11,7 @@ defmodule AppTwo do
         {:_, [{"/", AppTwo.Handler, []}]}
     ])
     # Name, NbAcceptors, TransOpts, ProtoOpts
-    {:ok, port} = :application.get_env(:app_two, :port)
+    port = Application.get_env(:app_two, :port)
     {:ok, _} = :cowboy.start_http(:http, 100,
         [port: port],
         [env: [dispatch: dispatch]]

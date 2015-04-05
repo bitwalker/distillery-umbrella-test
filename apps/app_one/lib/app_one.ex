@@ -11,7 +11,7 @@ defmodule AppOne do
         {:_, [{"/", AppOne.Handler, []}]}
     ])
     # Name, NbAcceptors, TransOpts, ProtoOpts
-    {:ok, port} = :application.get_env(:app_one, :port)
+    port = Application.get_env(:app_one, :port)
     {:ok, _} = :cowboy.start_http(:https, 100,
         [port: port],
         [env: [dispatch: dispatch]]

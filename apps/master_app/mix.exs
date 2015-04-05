@@ -6,6 +6,7 @@ defmodule MasterApp.Mixfile do
      version: "0.0.1",
      deps_path: "../../deps",
      lockfile: "../../mix.lock",
+     elixir: "~> 1.0",
      deps: deps]
   end
 
@@ -13,17 +14,17 @@ defmodule MasterApp.Mixfile do
   #
   # Type `mix help compile.app` for more information
   def application do
-    [applications: [:app_one, :app_two],
+    [applications: [:logger, :app_one, :app_two],
      mod: {MasterApp, []}]
   end
 
-  # Dependencies can be hex.pm packages:
+  # Dependencies can be Hex packages:
   #
   #   {:mydep, "~> 0.3.0"}
   #
   # Or git/path repositories:
   #
-  #   {:mydep, git: "https://github.com/elixir-lang/mydep.git", tag: "0.1"}
+  #   {:mydep, git: "https://github.com/elixir-lang/mydep.git", tag: "0.1.0"}
   #
   # To depend on another app inside the umbrella:
   #
@@ -31,7 +32,8 @@ defmodule MasterApp.Mixfile do
   #
   # Type `mix help deps` for more examples and options
   defp deps do
-    [{:app_one, path: "../app_one"},
-     {:app_two, path: "../app_two"}]
+    [{:app_one, in_umbrella: true},
+     {:app_two, in_umbrella: true},
+     {:exrm, "~> 0.15.3"}]
   end
 end
