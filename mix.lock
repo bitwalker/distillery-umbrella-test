@@ -1,5 +1,5 @@
-%{"conform": {:package, "0.10.0"},
-  "cowboy": {:git, "git://github.com/extend/cowboy.git", "a2fabcdecf0824b8b879f98e0601ab1477e3cb4e", []},
-  "cowlib": {:git, "git://github.com/ninenines/cowlib.git", "d544a494af4dbc810fc9c15eaf5cc050cced1501", [ref: "1.0.0"]},
-  "exrm": {:package, "0.14.0"},
-  "ranch": {:git, "git://github.com/ninenines/ranch.git", "adf1822defc2b7cfdc7aca112adabfa1d614043c", [ref: "1.0.0"]}}
+%{"conform": {:hex, :conform, "0.13.0"},
+  "cowboy": {:hex, :cowboy, "1.0.0"},
+  "cowlib": {:hex, :cowlib, "1.0.1"},
+  "exrm": {:hex, :exrm, "0.15.3"},
+  "ranch": {:hex, :ranch, "1.0.0"}}
