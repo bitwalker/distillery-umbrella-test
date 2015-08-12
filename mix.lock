@@ -1,5 +1,0 @@
-%{"conform": {:hex, :conform, "0.13.0"},
-  "cowboy": {:hex, :cowboy, "1.0.0"},
-  "cowlib": {:hex, :cowlib, "1.0.1"},
-  "exrm": {:hex, :exrm, "0.15.3"},
-  "ranch": {:hex, :ranch, "1.0.0"}}

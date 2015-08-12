@@ -34,6 +34,6 @@ defmodule MasterApp.Mixfile do
   defp deps do
     [{:app_one, in_umbrella: true},
      {:app_two, in_umbrella: true},
-     {:exrm, "~> 0.15.3"}]
+     {:exrm, "~> 0.18"}]
   end
 end
