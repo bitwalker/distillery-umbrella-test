@@ -22,4 +22,4 @@ use Mix.Config
 # here (which is why it is important to import them last).
 #
 #     import_config "#{Mix.env}.exs"
-config :app_two, port: 8091
+config :app_two, port: nil

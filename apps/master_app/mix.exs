@@ -34,6 +34,7 @@ defmodule MasterApp.Mixfile do
   defp deps do
     [{:app_one, in_umbrella: true},
      {:app_two, in_umbrella: true},
-     {:exrm, "~> 0.18"}]
+     {:exrm, github: "bitwalker/exrm", branch: "v1"},
+     {:conform, github: "bitwalker/conform"}]
   end
 end
