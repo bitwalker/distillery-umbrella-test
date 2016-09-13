@@ -41,7 +41,7 @@ rolling them under a top level application, which in our case is
 ### Configuration
 
 A key thing to be aware of is that normally configuration is not shared
-between apps. However, due to exrm's integration with conform, we're
+between apps. However, due to distillery's integration with conform, we're
 able to determine that `master_app` depends on two of it's sibling apps
 under the same umbrella, and therefore generate a merged schema.exs file
 which contains mappings and translations for all three, and allow you to
@@ -63,7 +63,7 @@ generate a release for the individual app, by generating the necessary
 files, and running plugins, including the conform configuration plugin which
 will generate the release's final configuration files.
 
-The end result will be a `rel` directory under each app, which contain
+The end result will be a top-level `rel` directory, which contain
 all the normal stuff you'd see in a standard application release.
 
 ### Deployment
@@ -80,8 +80,8 @@ automatically for you.
 
 ### Final thoughts
 
-While this is now supported in exrm, and the above scenario is perfectly
+While this is now supported in distillery, and the above scenario is perfectly
 fine, I'd still recommend avoiding umbrella projects unless you have a
 real need for them. I don't use them myself, so if you run into issues,
-please report them to the exrm tracker, and I'll address them as soon as I
+please report them to the distillery tracker, and I'll address them as soon as I
 can.

@@ -1,8 +1,8 @@
 /_build
 /deps
+/rel/app_one
+/rel/app_two
+/rel/master_app
 erl_crash.dump
 *.ez
-/**/rel
-**/**/*.schema.exs
-**/**/*.conf
 mix.lock

@@ -33,8 +33,6 @@ defmodule MasterApp.Mixfile do
   # Type `mix help deps` for more examples and options
   defp deps do
     [{:app_one, in_umbrella: true},
-     {:app_two, in_umbrella: true},
-     {:exrm, github: "bitwalker/exrm", branch: "v1"},
-     {:conform, github: "bitwalker/conform"}]
+     {:app_two, in_umbrella: true}, ]
   end
 end
