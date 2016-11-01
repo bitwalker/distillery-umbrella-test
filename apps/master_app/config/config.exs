@@ -23,5 +23,5 @@ use Mix.Config
 #
 #     import_config "#{Mix.env}.exs"
 config :master_app, port: 8099
-config :app_one, port: 8090
-config :app_two, port: 8091
+config :app_one, port: 9090
+config :app_two, port: 9091
