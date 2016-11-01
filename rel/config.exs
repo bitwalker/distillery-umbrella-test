@@ -23,31 +23,22 @@ environment :prod do
   set include_src: false
 end
 
-conform_prestart = Path.join(["#{:code.priv_dir(:conform)}",
-                              "bin",
-                              "pre_start.sh"])
-
 # You may define one or more releases in this file.
 # If you have not set a default release, or selected one
 # when running `mix release`, the first release in the file
 # will be used by default
-
 release :app_one do
   set version: current_version(:app_one)
-  set pre_start_hook: conform_prestart
   plugin Conform.ReleasePlugin
-
 end
 
 release :app_two do
   set version: current_version(:app_two)
-  set pre_start_hook: conform_prestart
   plugin Conform.ReleasePlugin
 end
 
 release :master_app do
   set version: current_version(:master_app)
-  set pre_start_hook: conform_prestart
   plugin Conform.ReleasePlugin
 end
 

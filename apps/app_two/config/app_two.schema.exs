@@ -54,7 +54,7 @@ See the moduledoc for `Conform.Schema.Validator` for more details and examples.
   mappings: [
     "app_two.port": [
       commented: false,
-      datatype: :atom,
+      datatype: :integer,
       doc: "Provide documentation for app_two.port here.",
       hidden: false,
       to: "app_two.port"
