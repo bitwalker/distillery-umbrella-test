@@ -27,6 +27,12 @@ end
 # If you have not set a default release, or selected one
 # when running `mix release`, the first release in the file
 # will be used by default
+release :combined do
+  set version: "0.1.0"
+  set applications: [:master_app, :app_one, :app_two]
+  plugin Conform.ReleasePlugin
+end
+
 release :app_one do
   set version: current_version(:app_one)
   plugin Conform.ReleasePlugin
