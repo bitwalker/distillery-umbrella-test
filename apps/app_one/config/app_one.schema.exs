@@ -60,6 +60,8 @@ See the moduledoc for `Conform.Schema.Validator` for more details and examples.
       to: "app_one.port"
     ]
   ],
-  transforms: [],
+  transforms: [
+    "app_one.foo": fn _conf -> "bar" end
+  ],
   validators: []
 ]
