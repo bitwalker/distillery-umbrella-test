@@ -15,6 +15,6 @@ defmodule DistilleryUmbrellaTest.MixProject do
   #
   # Run "mix help deps" for examples and options.
   defp deps do
-    [{:distillery, path: "../distillery"}]
+    [{:distillery, "~> 2.1"}]
   end
 end
